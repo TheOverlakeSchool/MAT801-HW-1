@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "findMin",
+      "setup": "",
+      "run": "gradle test --tests HW1.testFindMin",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "indexOf",
+      "setup": "",
+      "run": "gradle test --tests HW1.testIndexOf",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "numUnique",
+      "setup": "",
+      "run": "gradle test --tests HW1.testNumUnique",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "print",
+      "setup": "",
+      "run": "gradle test --tests HW1.testPrint",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "rotateRight",
+      "setup": "",
+      "run": "gradle test --tests HW1.testRotateRight",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "stretch",
+      "setup": "",
+      "run": "gradle test --tests HW1.testStretch",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
