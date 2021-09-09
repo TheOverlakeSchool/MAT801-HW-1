@@ -3,7 +3,7 @@
     {
       "name": "findMin",
       "setup": "",
-      "run": "gradle test --tests HW1.testFindMin",
+      "run": "gradle test --tests HW1Test.testFindMin",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "indexOf",
       "setup": "",
-      "run": "gradle test --tests HW1.testIndexOf",
+      "run": "gradle test --tests HW1Test.testIndexOf",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "numUnique",
       "setup": "",
-      "run": "gradle test --tests HW1.testNumUnique",
+      "run": "gradle test --tests HW1Test.testNumUnique",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -33,7 +33,7 @@
     {
       "name": "print",
       "setup": "",
-      "run": "gradle test --tests HW1.testPrint",
+      "run": "gradle test --tests HW1Test.testPrint",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -43,7 +43,7 @@
     {
       "name": "rotateRight",
       "setup": "",
-      "run": "gradle test --tests HW1.testRotateRight",
+      "run": "gradle test --tests HW1Test.testRotateRight",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -53,7 +53,7 @@
     {
       "name": "stretch",
       "setup": "",
-      "run": "gradle test --tests HW1.testStretch",
+      "run": "gradle test --tests HW1Test.testStretch",
       "input": "",
       "output": "",
       "comparison": "included",
