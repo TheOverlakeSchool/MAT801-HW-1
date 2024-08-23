@@ -13,7 +13,13 @@ public class HW1 {
      */
 
     public static int indexOf(int[] list, int lookup) {
-        return -2;
+
+        for (int index = 0; index < list.length; index++)
+        {
+            if (list[index] == lookup)
+                return index;
+        }
+        return -1;
     }
 
     /**
@@ -32,9 +38,13 @@ public class HW1 {
      */
 
     public static void print(int[] list) {
-
+        System.out.print("[");
+        for (int index = 0; index < list.length - 1; index++)
+            System.out.print(list[index] + ", ");
+        if (list.length > 0)
+            System.out.print(list[list.length - 1]);
+        System.out.print("]");
     }
-
     /**
      * Returns the minimum value in an array of integers.
      *
@@ -44,7 +54,11 @@ public class HW1 {
      */
 
     public static int findMin(int[] list) {
-        return 0;
+        int min = list[0];
+        for (int current: list)
+            if (min > current)
+                min = current;
+        return min;
     }
 
     /**
@@ -70,7 +84,23 @@ public class HW1 {
      */
 
     public static int numUnique(int[] list) {
-        return 0;
+        if (list.length == 0)
+            return 0;
+        int numDifferent = 0;
+        int currentValue = list[0];
+        boolean duplicate = false;
+        for (int index = 0; index < list.length - 2; index++)
+        {
+            currentValue = list[index];
+            duplicate = false;
+            for (int index2 = 0; index2 < list.length - 1; index2++)
+               if ((list[index2] == currentValue) && (index != index2)) {
+                    duplicate = true;
+                }
+            if (duplicate == false)
+                    numDifferent++;
+        }
+        return numDifferent;
     }
 
     /**
@@ -86,7 +116,13 @@ public class HW1 {
      */
 
     public static int[] stretch(int[] list) {
-        return null;
+        int[] returnArray = new int[list.length * 2];
+        for (int index = 0; index <list.length; index++)
+        {
+            returnArray[index*2] = (int) Math.ceil(((double)list[index])/2);
+            returnArray[index*2+1] = (int) Math.floor(((double)list[index])/2);
+        }
+        return returnArray;
     }
 
     /**
@@ -99,6 +135,11 @@ public class HW1 {
      */
 
     public static void rotateRight(int[] list) {
-
+        int last = list[list.length - 1];
+        for (int index = list.length - 1; index > 0; index--)
+        {
+            list[index] = list[index-1];
+        }
+        list[0] = last;
     }
 }
