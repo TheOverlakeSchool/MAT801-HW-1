@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class HW1 {
 
     /**
@@ -86,21 +88,18 @@ public class HW1 {
     public static int numUnique(int[] list) {
         if (list.length == 0)
             return 0;
-        int numDifferent = 0;
-        int currentValue = list[0];
+        ArrayList<Integer> uniques = new ArrayList<Integer>();
+        int currentValue = 0;
         boolean duplicate = false;
-        for (int index = 0; index < list.length - 2; index++)
+        for (int index = 0; index < list.length; index++)
         {
             currentValue = list[index];
-            duplicate = false;
-            for (int index2 = 0; index2 < list.length - 1; index2++)
-               if ((list[index2] == currentValue) && (index != index2)) {
-                    duplicate = true;
-                }
-            if (duplicate == false)
-                    numDifferent++;
+            if (!(uniques.contains(currentValue)))
+            {
+                uniques.add(currentValue);
+            }
         }
-        return numDifferent;
+        return uniques.size();
     }
 
     /**
